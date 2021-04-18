@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {createStore, applyMiddleware, compose} from 'redux'
+import {createStore, applyMiddleware} from 'redux'
+import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk'
 import {Provider} from 'react-redux'
+import heroReducer from './reducers/heroReducers'
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose;
 
-let store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)))
+
+let store = createStore(heroReducer, composeWithDevTools(applyMiddleware(thunk)))
 
 
 ReactDOM.render(
