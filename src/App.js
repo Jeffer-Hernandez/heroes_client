@@ -23,7 +23,7 @@ class App extends React.Component {
 
 // const mapStateToProps (state) =>{
 //   return {
-//     accounts: state.accounts
+//     heroes: state.heroes
 //   }
 // }
 
