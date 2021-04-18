@@ -1,9 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 import logo from './logo.svg';
 import './App.css';
+import {connect} from 'react-redux'
+import {fetchHeroes} from './actions/fetchHeroes'
 
 
 class App extends React.Component {
+
+  componentDidMount(){
+    this.props.fetchHeroes()
+  }
 
   render(){
     return (
@@ -15,4 +21,10 @@ class App extends React.Component {
   }
 }
 
-export default App;
+// const mapStateToProps (state) =>{
+//   return {
+//     accounts: state.accounts
+//   }
+// }
+
+export default connect(null, {fetchHeroes})(App);
