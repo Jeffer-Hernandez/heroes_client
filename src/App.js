@@ -7,9 +7,7 @@ import {fetchHeroes} from './actions/fetchHeroes'
 
 class App extends React.Component {
 
-  componentDidMount(){
-    this.props.fetchHeroes()
-  }
+
 
   render(){
     return (
@@ -21,10 +19,5 @@ class App extends React.Component {
   }
 }
 
-// const mapStateToProps (state) =>{
-//   return {
-//     heroes: state.heroes
-//   }
-// }
 
-export default connect(null, {fetchHeroes})(App);
+export default connect()(App);
