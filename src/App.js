@@ -1,8 +1,9 @@
 import React from 'react'
-import logo from './logo.svg';
-import './App.css';
+
+
 import {connect} from 'react-redux'
 import {fetchHeroes} from './actions/fetchHeroes'
+import HeroContainer from './containers/HeroContainer'
 
 
 class App extends React.Component {
@@ -12,8 +13,8 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        App
-      
+       <HeroContainer/>
+        
       </div>
     );
   }
