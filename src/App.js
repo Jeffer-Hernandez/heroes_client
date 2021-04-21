@@ -1,4 +1,5 @@
 import React from 'react'
+import {connect} from 'react-redux'
 import {fetchHeroes} from './actions/fetchHeroes'
 import HeroContainer from './containers/HeroContainer'
 
