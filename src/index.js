@@ -7,7 +7,7 @@ import {createStore, applyMiddleware} from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk'
 import {Provider} from 'react-redux'
-import heroReducer from './reducers/commentReducer'
+import heroReducer from './reducers/heroReducer'
 
 
 
