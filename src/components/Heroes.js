@@ -1,12 +1,13 @@
 import React from 'react'
 
 
-const Heroes = (props) =>{
+const Heroes = (heroes) =>{
 
-    console.log(props)
+
+    console.log(heroes)
     return(
         <div>
-            {props.data[0].attributes.name.map(hero => <li>{hero.name}</li>)}
+            {/* {heroes.map(hero => <li>{heroes}</li>)} */}
         </div>
     )
 

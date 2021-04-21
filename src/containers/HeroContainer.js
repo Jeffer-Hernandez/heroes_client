@@ -17,9 +17,10 @@ class HeroContainer extends React.Component {
     render() {
         return(
         <div className="HeroContainer">
-            HeroContainer
-            <CommentContainer/>
+            HeroContainer:
             <Heroes heroes={this.props.heroes}/>
+            <CommentContainer/>
+            
         </div>
         )
 
