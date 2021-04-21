@@ -1,7 +1,7 @@
 import React from 'react'
 
 import CommentInput from '../components/CommentInput'
-import Comments from '../components/Heroes'
+import Comments from '../components/Comments'
 
 
 
@@ -17,19 +17,14 @@ class CommentContainer extends React.Component {
            
             <CommentInput/>
             <Comments/>
+            
+
         </div>
         )
 
     }
 }
 
-const mapStateToProps = state =>{
-
-    return{
-        heroes: state.heroes
-    }
-
-}
 
 export default CommentContainer
 
