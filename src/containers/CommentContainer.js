@@ -1,5 +1,5 @@
 import React from 'react'
-import {Connect} from 'react-redux'
+import {connect} from 'react-redux'
 import CommentInput from '../components/CommentInput'
 import Comments from '../components/Comments'
 
@@ -7,6 +7,10 @@ import Comments from '../components/Comments'
 
 
 class CommentContainer extends React.Component {
+
+    componentDidMount(){
+        
+    }
 
     render() {
         return(
@@ -20,12 +24,13 @@ class CommentContainer extends React.Component {
     }
 }
 
-const mapStateToProps = (state) =>{
+const mapStateToProps = state =>{
 
-    return(
-        comments: state.Comments
-    )
+    return{
+        comments: state.comments
+    }
 
 }
 
-export default Connect(mapStateToProps)(CommentContainer)
+// export default Connect(mapStateToProps)(CommentContainer)
+export default connect()(CommentContainer)
