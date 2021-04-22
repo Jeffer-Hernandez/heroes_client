@@ -9,10 +9,10 @@ import {connect} from 'react-redux'
 class App extends React.Component {
 
   componentDidMount(){
-    debugger
+ 
     this.props.fetchHeroes()
     
-}
+  }
 
 
 
