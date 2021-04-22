@@ -4,7 +4,7 @@ export function fetchHeroes() {
         .then(resp => resp.json())
         .then(heroes => dispatch({
             type: 'FETCH_HEROES',
-            payload: heroes
+            payload: heroes.data
         })
         )
     }
