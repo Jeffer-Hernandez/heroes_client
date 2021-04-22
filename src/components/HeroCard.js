@@ -8,7 +8,7 @@ const HeroCard = (props) =>{
 
     return(
         <div className="HeroCard">
-            {this.props.hero}
+            {<h1>{props.hero}</h1>}
             <CommentContainer/>
         </div>
     )
