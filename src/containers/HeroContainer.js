@@ -7,29 +7,39 @@ import HeroCard from '../components/HeroCard'
 
 
 class HeroContainer extends React.Component {
-debugger
+
    
 
     
-    heroData = (data) => {
-        return data.map(hero => <HeroCard hero={hero}/>)
-        // the "data" in data.map is an object with key value pairs "data: array[0]"
-        // extract the array from this object and THEN call map on it in this way.
+    heroData = () => {
+
+        //console.log(data)
+        debugger
+        //const newData= Object.values(data);
+        // newData is an array named "data" which is the value to the 
+        // key of data being passed in from this.props.heroes
+    
+        
+        return this.props.heroes.map(function(hero) {
+            debugger
+            console.log(hero)
+            return <HeroCard hero={hero.id}/>
+        })
+        // the "hero" being passed in is a hero object which is an element of
+        // an array named "data"
+
+        
     }
 
     render() {
-        debugger
+  
         
             
         return(
         <div className="HeroContainer">
             
-            {/* Use map to pass in an array of heroes and create as many 
-            HeroCards as there are heroes*/}
-           {this.heroData(this.props.heroes)}
-            {/* {this.props.heroes.data.map(hero =>{<HeroCard hero={hero}/>})} */}
-            
-            
+           {this.heroData()}
+              
         </div>
         )
 
