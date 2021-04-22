@@ -4,9 +4,8 @@ import React from 'react'
 const Comments = (comments) =>{
 
 
-    console.log(comments)
     return(
-        <div>
+        <div className="Comments">
             {/* {heroes.map(hero => <li>{heroes}</li>)} */}
         </div>
     )
