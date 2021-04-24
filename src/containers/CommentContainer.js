@@ -16,7 +16,7 @@ class CommentContainer extends React.Component {
         <div className="CommentContainer">
            
             <CommentInput heroId={this.props.heroId}/>
-            <Comments/>
+            <Comments heroComments={this.props.heroComments}/>
             
 
         </div>
