@@ -1,4 +1,4 @@
-import react from 'react'
+import React from 'react'
 
 
 const CommentCard = (props) =>{
@@ -7,7 +7,7 @@ const CommentCard = (props) =>{
 
     return(
         <div className="HeroCard">
-            {<h1>{props.userComment.content}</h1>}
+            {<h1>{props.userComment}</h1>}
         </div>
     )
 
