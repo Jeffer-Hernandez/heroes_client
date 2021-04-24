@@ -6,6 +6,7 @@ export default function commentReducer(state = {comments: []}, action ) {
     switch(action.type){
      
      case 'POST_COMMENT':
+         debugger
          return {...state, comments: [...state.comments, action.payload]}
      default:
          return state
