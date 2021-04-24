@@ -13,21 +13,13 @@ class HeroContainer extends React.Component {
     
     heroData = () => {
 
-        //console.log(data)
-        // debugger
-        //const newData= Object.values(data);
-        // newData is an array named "data" which is the value to the 
-        // key of data being passed in from this.props.heroes
-    
-        
+
         return this.props.heroes.map(function(hero) {
             // debugger
             console.log(hero)
             return <HeroCard heroId={hero.id} heroName={hero.attributes.name} heroDescription={hero.attributes.description} 
-            heroImage={hero.attributes.image_url}/>
+            heroImage={hero.attributes.image_url} heroComments={hero.attributes.comments}/>
         })
-        // the "hero" being passed in is a hero object which is an element of
-        // an array named "data"
 
         
     }
