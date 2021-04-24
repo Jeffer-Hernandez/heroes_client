@@ -1,17 +1,17 @@
 
 
 //this will update the state of the store to include the newest comment
-// export default function commentReducer(state = {comments: []}, action ) {
+export default function commentReducer(state = {comments: []}, action ) {
 
-//     switch(action.type){
+    switch(action.type){
      
-//      case 'POST_COMMENTS':
-//          return {comments: action.payload}
-//      default:
-//          return state
+     case 'POST_COMMENT':
+         return {...state, comments: [...state.comments, action.payload]}
+     default:
+         return state
      
          
  
-//     }
+    }
  
-//  }
+ }
