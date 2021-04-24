@@ -1,12 +1,14 @@
 import React from 'react'
 
 
-const Comments = (comments) =>{
+const Comments = (props) => {
 
 
     return(
         <div className="Comments">
-            {/* {heroes.map(hero => <li>{heroes}</li>)} */}
+            {/* make comment content render */}
+            {props.map(comment=> <li>{comment.content}</li>)}
+
         </div>
     )
 
