@@ -6,7 +6,7 @@ const CommentCard = (props) =>{
     console.log(props)
 
     return(
-        <div className="HeroCard">
+        <div key={props.userComment.id} className="HeroCard">
             {<h1>{props.userComment}</h1>}
         </div>
     )
