@@ -2,8 +2,7 @@ import React from 'react'
 import {fetchHeroes} from '../actions/fetchHeroes'
 import {connect} from 'react-redux'
 import HeroCard from '../components/HeroCard'
-import {Route} from 'react-router-dom'
-import HeroShow from '../components/HeroShow'
+
 
 
 
@@ -35,7 +34,7 @@ class HeroContainer extends React.Component {
         <div className="HeroContainer">
             
            {this.heroData()}
-           <Route path='/heroes/:id' render={(routerProps)=> <HeroShow {...routerProps} heroes={this.props.heroes}/>}/>
+           
 
            {/* route for heroShow at /heroes/id? */}
            {/* see how links are made, make a link from superhero picture to heroShow */}
