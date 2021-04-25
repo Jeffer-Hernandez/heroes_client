@@ -9,7 +9,7 @@ const HeroCard = (props) =>{
     console.log(props)
 
     return(
-        <div className="HeroCard">
+        <div key={props.heroId} className="HeroCard">
             {<h1>{props.heroName}</h1>}
             {<h1>{props.heroImage}</h1>}
             {<h1>{props.heroDescription}</h1>}      
