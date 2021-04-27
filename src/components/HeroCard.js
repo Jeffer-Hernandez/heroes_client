@@ -1,6 +1,7 @@
 import React from 'react'
 import {Route} from 'react-router-dom'
-import HeroShow from '../components/HeroShow'
+import CommentContainer from '../containers/CommentContainer'
+
 
 
 
@@ -11,12 +12,17 @@ const HeroCard = (props) =>{
     return(
         <div key={props.heroId} className="HeroCard">
             {<h1>{props.heroName}</h1>}
-            {<h1>{props.heroImage}</h1>}
-            {<h1>{props.heroDescription}</h1>}      
-            <Route path='/heroes/:id' render={(routerProps)=> <HeroShow {...routerProps} heroes={props}/>}/>      
+            {<h3>{props.heroImage}</h3>}
+            {<h3>{props.heroDescription}</h3>}      
+            <CommentContainer heroId={props.heroId} heroComments={props.heroComments}/>
         </div>
     )
 
 }
 
 export default HeroCard
+
+//"nested routes" - posts/1/comments/new or posts/1/comments/3
+//"nested routes" - in react is really just "dynamic" routes (which could ALSO be nested) - posts/:id
+//neither are required for this project
+//just 3 routes are required - e.g. /about, /heroes, /home
