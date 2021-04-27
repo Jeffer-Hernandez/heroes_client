@@ -7,7 +7,7 @@ const CommentCard = (props) =>{
 
     return(
         <div key={props.userComment.id} className="HeroCard">
-            {<h1>{props.userComment}</h1>}
+            {<p>{props.userComment}</p>}
         </div>
     )
 
