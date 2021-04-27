@@ -9,7 +9,7 @@ class App extends React.Component {
     return (
       <div className="App">
        <Route path='/heroes' component={HeroContainer}/>
-       <h1>Welcome to Heroes!</h1>
+       {/* <h1>Welcome to Heroes!</h1> */}
        {/* make a welcome component, a link to heroContainer */}
       </div>
     );
