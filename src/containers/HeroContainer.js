@@ -24,6 +24,8 @@ class HeroContainer extends React.Component {
             // console.log(this.props.heroes)
             return <HeroCard heroId={hero.id} heroName={hero.attributes.name} heroDescription={hero.attributes.description}
             heroImage={hero.attributes.image_url} heroComments={hero.attributes.comments}/>
+
+            
         })
         
     }
