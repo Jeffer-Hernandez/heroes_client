@@ -19,11 +19,11 @@ class HeroContainer extends React.Component {
     
     heroData = () => {
         console.log(this.props.heroes)
+        // debugger
         return this.props.heroes.map(function(hero) {
-            // debugger
-            // console.log(this.props.heroes)
+           
             return <HeroCard heroId={hero.id} heroName={hero.attributes.name} heroDescription={hero.attributes.description}
-            heroImage={hero.attributes.image_url} heroComments={hero.attributes.comments}/>
+            heroImage={hero.attributes.image_url} comments={hero.attributes.comments} />
 
             
         })
@@ -51,6 +51,7 @@ const mapStateToProps = state =>{
 
     return{
         heroes: state.heroes
+        
     }
 
 }
