@@ -6,7 +6,7 @@ import CommentContainer from '../containers/CommentContainer'
 
 
 const HeroCard = (props) =>{
-
+    // debugger
     console.log(props)
 
     return(
@@ -14,7 +14,7 @@ const HeroCard = (props) =>{
             {<h1>{props.heroName}</h1>}
             {<h3>{props.heroImage}</h3>}
             {<h3>{props.heroDescription}</h3>}      
-            <CommentContainer heroId={props.heroId} heroComments={props.heroComments}/>
+            <CommentContainer heroId={props.heroId} comments={props.comments} />
         </div>
     )
 
