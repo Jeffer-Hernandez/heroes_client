@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {connect} from 'react-redux'
 import CommentInput from '../components/CommentInput'
 import Comments from '../components/Comments'
 
@@ -9,14 +9,15 @@ import Comments from '../components/Comments'
 
 class CommentContainer extends React.Component {
 
+    // debugger
     
-
     render() {
+        console.log(this.props)
         return(
         <div className="CommentContainer">
            
             <CommentInput heroId={this.props.heroId}/>
-            <Comments heroComments={this.props.heroComments}/>
+            <Comments comments={this.props.comments} />
             
 
         </div>
@@ -26,5 +27,8 @@ class CommentContainer extends React.Component {
 }
 
 
+
 export default CommentContainer
+
+
 
