@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {postComments} from '../actions/postComments'
+import {postComment} from '../actions/postComment'
 
 class CommentInput extends React.Component {
 
@@ -18,7 +18,7 @@ class CommentInput extends React.Component {
 
     handleSubmit = (event) =>{
         event.preventDefault()
-        this.props.postComments(this.state)
+        this.props.postComment(this.state)
         this.setState({
             content: '',
             hero_id: this.props.heroId
@@ -44,4 +44,4 @@ class CommentInput extends React.Component {
 
 
 
-export default connect(null, {postComments})(CommentInput)
+export default connect(null, {postComment})(CommentInput)
