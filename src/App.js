@@ -15,9 +15,6 @@ class App extends React.Component {
         <Route path='/about' component={About}/>
         <Route path='/heroes' component={HeroContainer}/>
        
-
-       {/* <h1>Welcome to Heroes!</h1> */}
-       {/* make a welcome component, a link to heroContainer */}
       </div>
     );
   }
